@@ -1,0 +1,70 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 11:27:59 by aelberka          #+#    #+#             */
+/*   Updated: 2026/10/22 14:29:34 by aelberka         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	checklen(long *nb, size_t *len)
+{
+	long	n;
+
+	n = *nb;
+	if (*nb == 0)
+	{
+		*len = 1;
+		return ;
+	}
+	if (*nb < 0)
+	{
+		*nb = -(*nb);
+		n = -n;
+		*len = 1;
+	}
+	while (n > 0)
+	{
+		n /= 10;
+		(*len)++;
+	}
+}
+char	*ft_itoa(int n)
+{
+	char	*m;
+	size_t	len;
+	long	nb;
+
+	nb = n;
+	len = 0;
+	checklen(&nb, &len);
+	m = malloc(len + 1);
+	if (!m)
+		return (NULL);
+	m[len] = '\0';
+	while (len > (n < 0)) // 1 or 0 // true or false |
+	{
+		len--;
+		m[len] = (nb % 10) + '0';
+		nb /= 10;
+	}
+	if (n < 0)
+		m[0] = '-';
+	return (m);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*m;
+
+	m = ft_itoa(0);
+	printf("%s", m);
+	free(m);
+}
