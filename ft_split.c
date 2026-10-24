@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 22:46:03 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/22 23:07:43 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/24 03:48:58 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,17 +96,20 @@ char	**ft_split(char const *s, char c)
 	return (m);
 }
 
-//#include <stdio.h>
+#include <stdio.h>
 
-//int	main(void)
-//{
-//	char *s = NULL;
-//	char c = ' ';
-//	char **m;
-//	m = ft_split(s, c);
-//	printf("%s\n", m[0]);
-//	printf("%s\n", m[1]);
-//	printf("%s\n", m[2]);
-//	printf("%s\n", m[3]);
-//	free(m);
-//}
+int	main(void)
+{
+	char	*s;
+	char	c;
+	char	**m;
+
+	s = NULL;
+	c = ' ';
+	m = ft_split(s, c);
+	printf("%s\n", m[0]);
+	printf("%s\n", m[1]);
+	printf("%s\n", m[2]);
+	printf("%s\n", m[3]);
+	free(m);
+}
