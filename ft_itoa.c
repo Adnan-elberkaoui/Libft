@@ -6,13 +6,13 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 11:27:59 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/22 14:29:34 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/26 17:31:10 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	checklen(long *nb, size_t *len)
+static void	checklen(long *nb, size_t *len)
 {
 	long	n;
 

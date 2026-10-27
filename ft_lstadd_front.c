@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 23:09:07 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/26 14:47:26 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/27 04:38:44 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ int	main(void)
 	int p3 = 12;
 	int p4 = 13;
 
-	int new = 55;
+	int p5 = 14;
 	
 	t_list *node1 = ft_lstnew(&p1);
 	t_list *node2 = ft_lstnew(&p2);
 	t_list *node3 = ft_lstnew(&p3);
 	t_list *node4 = ft_lstnew(&p4);
-	t_list *node5 = ft_lstnew(&new);
+	t_list *node5 = ft_lstnew(&p5);
 	
 	ft_link(node1 , node2);
 	ft_link(node2 , node3);

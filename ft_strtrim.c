@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 23:39:42 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/24 15:24:26 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/26 17:35:21 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ char *ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	start	end;
-	
 }
