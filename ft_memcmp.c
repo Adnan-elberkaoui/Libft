@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:48:12 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/19 18:07:20 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/27 21:40:00 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char str[] = "adndw";
-	char str2[] = "adnfw";
-	printf("%d", memcmp(str, str2, 4));
-}
+//int	main(void)
+//{
+//	char str[] = "adndw";
+//	char str2[] = "adnfw";
+//	printf("%d", memcmp(str, str2, 4));
+//}

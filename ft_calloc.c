@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 12:20:09 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/23 13:31:38 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/27 21:40:17 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,17 @@ void	*ft_calloc(size_t count, size_t size)
 	return (p);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int main (void)
-{
-	char str[] = "adnan";
-	char *m2;
-	char *m;
-	m = ft_calloc(0, 7);
-	m2 = calloc(0 , 7);
+//int main (void)
+//{
+//	char str[] = "adnan";
+//	char *m2;
+//	char *m;
+//	m = ft_calloc(0, 7);
+//	m2 = calloc(0 , 7);
 	
-	printf("%s \n %s\n" , m , m2);
-	free(m);
-	free(m2);
-}
+//	printf("%s \n %s\n" , m , m2);
+//	free(m);
+//	free(m2);
+//}
