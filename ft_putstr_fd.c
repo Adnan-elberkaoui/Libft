@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 03:53:40 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/24 03:57:04 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 17:29:19 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+	if (fd < 0 || !s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }

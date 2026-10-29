@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:09:44 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/22 18:25:12 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 17:20:16 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
-	unsigned const char	*s;
+	const unsigned char	*s;
 	size_t				i;
 
 	i = 0;
 	d = (unsigned char *)dest;
-	s = (unsigned char *)src;
+	s = (const unsigned char *)src;
 	while (i < n)
 	{
 		d[i] = s[i];

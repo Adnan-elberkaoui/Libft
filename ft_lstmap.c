@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 14:16:04 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/28 04:55:34 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 20:04:02 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,41 +37,52 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_lst);
 }
 
-void	*ft_tolower(void *c)
-{
-	char	*p;
-	int		i;
+//void	*ft_tolowerr(void *c)
+//{
+//	char	*p;
+//	int		i;
 
-	p = (char *)c;
-	i = 0;
-	while (p[i])
-	{
-		if (p[i] >= 'a' && p[i] <= 'z')
-			p[i] += 32;
-		i++;
-	}
-	return ((void *)p);
-}
+//	p = (char *)c;
+//	i = 0;
+//	while (p[i])
+//	{ 
+//		if (p[i] >= 'a' && p[i] <= 'z')
+//			p[i] -= 32;
+//		i++;
+//	}
+//	return (c);
+//}
 
-int	main(void)
-{
-	t_list *list;
-	list = NULL; // empty list;
-	ft_lstadd_front(&list, ft_lstnew("hello"));
-	ft_lstadd_front(&list, ft_lstnew("3333"));
-	ft_lstadd_front(&list, ft_lstnew("hedwdwllo"));
+//#include <stdio.h>
 
-	while (list)
-	{
-		printf("%s\n", (char *)list->content);
-		list = list->next;
-	}
+//int	main(void)
+//{
+//	t_list *list; //
+//	t_list *save;
 
-	t_list *list2 = ft_lstmap(list , ft_tolower , &free);
+//	char a[] = "aaa";
+//	char b[] = "bbb";
+//	char c[] = "ccc";
 
-	while (list2)
-	{
-		printf("%s\n", (char *)list2->content);
-		list2 = list2->next;
-	}
-}
+//	save = NULL;
+//	list = NULL; // empty list;
+//	ft_lstadd_back(&list, ft_lstnew(a));
+//	ft_lstadd_back(&list, ft_lstnew(b));
+//	ft_lstadd_back(&list, ft_lstnew(c));
+
+//	save = list;
+//	//while (list)
+//	//{
+//	//	printf("%s\n", (char *)list->content);
+//	//	list = list->next;
+//	//}
+
+//	t_list *list2;
+//	list2 = ft_lstmap(list , ft_tolowerr , &free);
+
+//	while (list2)
+//	{
+//		printf("%s\n", (char *)list2->content);
+//		list2 = list2->next;
+//	}
+//}

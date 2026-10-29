@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 13:32:01 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/21 10:53:23 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:05:35 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (m);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	str[] = "hello word";
-	char	*p;
+//int	main(void)
+//{
+//	char	str[] = "hello word";
+//	char	*p;
 
-	p = ft_substr(str, 10, 3);
-	printf("%s", p);
-	free(p);
-}
+//	p = ft_substr(str, 10, 3);
+//	printf("%s", p);
+//	free(p);
+//}

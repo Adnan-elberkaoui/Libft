@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 09:47:19 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/27 04:02:16 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 20:51:49 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,8 @@ void				ft_putstr_fd(char *s, int fd);
 char				**ft_split(char const *s, char c);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_substr(char const *s, unsigned int start, size_t len);
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif

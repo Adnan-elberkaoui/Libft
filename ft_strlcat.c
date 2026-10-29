@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:34:46 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/19 15:26:42 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 21:05:43 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[len] = '\0';
 	return (originallendst + ft_strlen(src));
+}
+
+
+int main (void)
+{
+	
 }

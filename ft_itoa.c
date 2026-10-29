@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 11:27:59 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/26 17:31:10 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 17:12:56 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ static void	checklen(long *nb, size_t *len)
 		(*len)++;
 	}
 }
+
 char	*ft_itoa(int n)
 {
 	char	*m;
@@ -47,7 +48,7 @@ char	*ft_itoa(int n)
 	if (!m)
 		return (NULL);
 	m[len] = '\0';
-	while (len > (n < 0)) // 1 or 0 // true or false |
+	while (len > (n < 0))
 	{
 		len--;
 		m[len] = (nb % 10) + '0';
@@ -56,15 +57,4 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		m[0] = '-';
 	return (m);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*m;
-
-	m = ft_itoa(0);
-	printf("%s", m);
-	free(m);
 }

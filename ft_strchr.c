@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:33:41 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/19 15:37:40 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/29 17:44:56 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return (char *)&s[i];
 		i++;
 	}
-	if(s[i] == '\0' && c == '\0')
+	if(s[i] == (char)c)
 		return (char *)&s[i];
 	return (NULL);
 }

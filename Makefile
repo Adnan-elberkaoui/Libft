@@ -1,7 +1,6 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-INCLUDE = -I.
 HEADER = libft.h
 SRCS = ft_isalpha.c \
        ft_isdigit.c \
@@ -47,13 +46,15 @@ SRCS = ft_isalpha.c \
        ft_lstiter.c \
        ft_lstmap.c
 OBJS = $(SRCS:.c=.o)
+#finna bantlek chi .c t7wlat l .o 7atha f had l OBJS
+
+
+$(NAME): $(OBJS) 
+	ar rcs $(NAME) $(OBJS) 
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-
-%.o: %.c $(HEADER)
+%.o: %.c $(HEADER) // patern 
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
