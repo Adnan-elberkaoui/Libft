@@ -6,18 +6,17 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 23:08:58 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 17:01:12 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:30:31 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if(!lst)
+	if (!lst)
 		return (NULL);
-	
-	while(lst->next)
+	while (lst->next)
 		lst = lst->next;
 	return (lst);
 }

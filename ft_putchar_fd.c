@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 03:52:26 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 17:24:53 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:31:28 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if(fd < 0)
+	if (fd < 0)
 		return ;
 	write(fd, &c, 1);
 }

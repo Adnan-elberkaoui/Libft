@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 13:32:01 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 18:05:35 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:29:52 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(m, &s[start], len + 1);
 	return (m);
 }
-
-//#include <stdio.h>
-
-//int	main(void)
-//{
-//	char	str[] = "hello word";
-//	char	*p;
-
-//	p = ft_substr(str, 10, 3);
-//	printf("%s", p);
-//	free(p);
-//}

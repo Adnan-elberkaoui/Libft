@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:14:55 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 17:23:06 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:30:22 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char *d;
-	unsigned const char *s;
-	size_t i;
-	
+	unsigned char		*d;
+	unsigned const char	*s;
+	size_t				i;
+
 	if (dest == src || n == 0)
 		return (dest);
 	d = (unsigned char *)dest;

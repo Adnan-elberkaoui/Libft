@@ -46,8 +46,6 @@ SRCS = ft_isalpha.c \
        ft_lstiter.c \
        ft_lstmap.c
 OBJS = $(SRCS:.c=.o)
-#finna bantlek chi .c t7wlat l .o 7atha f had l OBJS
-
 
 $(NAME): $(OBJS) 
 	ar rcs $(NAME) $(OBJS) 

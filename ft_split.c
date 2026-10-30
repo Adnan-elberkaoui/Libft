@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 22:46:03 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 17:41:12 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:30:16 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,8 +87,8 @@ char	**ft_split(char const *s, char c)
 	char	**m;
 	size_t	words;
 
-	if(!s)
-		return NULL;
+	if (!s)
+		return (NULL);
 	words = count_word(s, c);
 	m = malloc((words + 1) * sizeof(char *));
 	if (!m)

@@ -6,15 +6,15 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 18:07:01 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/29 16:40:27 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:31:04 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	long long result;
-	int sign;
+	int			i;
+	long long	result;
+	int			sign;
 
 	i = 0;
 	sign = 1;

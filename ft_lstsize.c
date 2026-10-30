@@ -6,7 +6,7 @@
 /*   By: aelberka <aelberka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 23:09:12 by aelberka          #+#    #+#             */
-/*   Updated: 2026/10/26 14:48:20 by aelberka         ###   ########.fr       */
+/*   Updated: 2026/10/30 09:30:27 by aelberka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	i = 0;
-	if(!lst)
+	if (!lst)
 		return (0);
-	while(lst)
+	while (lst)
 	{
 		i++;
 		lst = lst->next;
